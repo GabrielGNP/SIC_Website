@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>   
+    <title> SICpage</title>
+    <meta charset="UTF-8">
+    <link href="./styles-SICpages.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/c3a32bb4c5.js" crossorigin="anonymous"></script>
+    <script src="./FunctsSIC.js"></script>
+</head>
+
+<body>
+    <header>
+        <button title="Ir al portafolio" style=" position: fixed; background: transparent; color: var(--colorbase); font-size: 30px; border: 0px;" onmouseup="this.style.color='var(--colorbase)'" onmousedown="this.style.color='var(--colorbaseDark)'" onclick="location.href='https://gabrielgnp.github.io/Portafolio/index.html'"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <!--
+        <div style="text-align: right;">
+            <label>
+                <input type="checkbox" class="changeDarkLight" name="DarkLight" id="changeLight" style="visibility:hidden; height: 0xp;width: 0px;"  onchange="ChangeDarkLight(1);">
+                <i id="ChaL" class="SM fa-solid fa-sun" style="color: var(--TextColor); font-size: 15px;"></i>
+            </label>
+            <label>
+                <input type="checkbox" class="changeDarkLight" name="DarkLight" id="changeDark" style="visibility:hidden; height: 0xp; width: 0px;" onchange="ChangeDarkLight(0);">
+                <i id="ChaD" class="SM fa-solid fa-moon" style="color: var(--colorbase); font-size: 25px;"></i>
+            </label>
+        </div>-->
+        
+        <div class="title" style="margin-bottom:100px;">
+            <div style="padding-left: 30px;" id="titleText">
+                <h1>SIC</h1>
+                <h2>System Inputs Controller</h2>
+            </div>
+            
+
+            <div id="OptionsContents">
+                <fieldset id="ChecksOPCont">
+                    <label class="LabelOPCont" >
+                        <input  type="button" class="RadOPCont" id="CheckOP0" name="OPCont" style="visibility:hidden" onclick="location.href='#Titfunctionality'"> Detalles
+                    </label>
+                    <label class="LabelOPCont" >
+                        <input type="button" class="RadOPCont" id="CheckOP1" name="OPCont" style="visibility:hidden" onclick="location.href='#TitOptions'"> Opciones
+                    </label>
+                    <label class="LabelOPCont" >
+                        <input type="button" class="RadOPCont" id="CheckOP2" name="OPCont" style="visibility:hidden" onclick="location.href='#TitTechnicalDetails'"> Detalles Técnicos
+                    </label>
+                    <label class="LabelOPCont" >
+                        <input type="button" class="RadOPCont" id="CheckOP3" name="OPCont" style="visibility:hidden" onclick="location.href='#TitHistory'"> Historial
+                    </label>
+                    <label class="LabelOPCont" >
+                        <input type="button" class="RadOPCont" id="CheckOP3" name="OPCont" style="visibility:hidden" onclick="location.href='#TitCod&Prog'"> Código y Programa
+                    </label>
+                    
+                </fieldset>
+            </div>
+        </div>
+        
+    </header>
+    
+    <section>
+        <div style="margin: 0px 0px 200px 0px;">
+            <div style="width: 90%;padding: 20px; text-align: center;">
+                El sistema SIC, o System Inputs Controller (sistema de control de entradas), es un sistema que permite controlar la ejecución de los inputs realizados por los periféricos, más concretamente el teclado y el ratón. <br>
+                Proporciona un contador de clics y un autoclic con varias opciones para su funcionamiento.<br>NO, este programa no es un keyloger.
+            </div>
+        </div>
+
+       
+        <div id="Titfunctionality"> <h1 class="titles">FUNCIONALIDAD</h1> </div>
+        <div style="margin-bottom:200px">
+            <div class="divFil" >
+                <div class="contimag" style="margin-right: 50px;">
+                    <img id="img1" src="./imgs/SIC/v2B.png" style="height: 480px;">
+                </div>
+                <div class="DivInternoDivFil" style="width: 50%;padding: 20px;">
+                    <h1>CONTADORES</h1>
+                        Este programa busca poder proporcionar un control sobre los clics y las pulsaciones de las teclas 
+                        brindando contadores que cuentan los diferentes clics del ratón y las pulsaciones de cualquier tecla 
+                        del teclado. 
+                        <br>¿Alguna vez te preguntaste cuanto uso le das al ratón? 
+                        <br>¿Cuantos clics haces al día? ¿Cuantas teclas pulsas al día?
+                        <br>¿Haces demasiados clics?¿Que tanto uso le das a tus periféricos?
+                        <br>El programa facilita contadores para tener un control sobre estos datos. Además, facilita un temporizador para poder tener una referencia de tiempo.
+                </div>
+            </div>
+
+            <div style=" display: flex;padding: 10px;">
+                <div style="width: 50%;padding: 20px;">
+                    <h1>AUTOCLICKER</h1>
+                    Este programa incluye la posibilidad de automatizar el ingreso de comandos hacia el sistema operativo. 
+                    <br><br>¿Automatizar comandos? ¿Qué comandos? ¿Qué se puede automatizar? 
+                    <br><br>Supongo que alguna vez has oído sobre autoclickers... ¿si?... ¿no?... bueno, en palabras simples, un autoclicker permite ejecutar múltiples clics por segundo sin tener que mover el dedo para presionar múltiples veces el clic, solo con apretar una tecla configurada por usted mismo. <br>
+                    El programa simula la pulsación del clic mediante comandos que interpreta y ejecuta el sistema operativo Windows.
+                    
+
+                </div>
+                <div class="contimag" style="margin-left: 50px; width: 50%;">
+                    <br><br><br><br>
+                    Puede: <br><br>
+                    <item><i class="fa-solid fa-circle"></i></item> Configurar cual clic quiere automatizar (clic izquierdo o clic derecho). <br> <br>
+                    <item><i class="fa-solid fa-circle"></i></item> Configurar que tecla o combinación de teclas activará el autoclic. <br> <br>
+                    <item><i class="fa-solid fa-circle"></i></item> Indicar cuantos clics por segundo quiere hacer. <br><br>
+                    <item><i class="fa-solid fa-circle"></i></item> Configurar si para activar el autoclic debe mantener presionada la tecla o si al presionar se activa y al volver a presionar se desactiva. <br><br>
+                    <item><i class="fa-solid fa-circle"></i></item> Ver la cantidad de clics hechos con el autoclic. <br><br>
+                    <item><i class="fa-solid fa-circle"></i></item> Ver la cantidad de clics hechos con el autoclic desde que se inició el programa. <br>
+
+                </div>
+            </div>
+
+          
+        </div>
+
+        <div id="TitOptions"> <h1 class="titles">OPCIONES</h1> </div>
+        <div style="margin-bottom:200px">
+            <div class="divFil" >
+                <div class="contimag" style="margin-right: 50px;">
+                    <img id="img2" src="./imgs/SIC/v2BOP.png" style="height: 480px;">
+                </div>
+                <div class="DivInternoDivFil"  style="width: 50%;padding: 20px;">
+                    <h1>Personalización</h1>
+                        El programa cuenta con la posibilidad de personalizar su aspecto.
+                        <br>¿Cómo puede hacer esto?
+                        <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> Para empezar puede elegir el color de la ventana. Puede que esté familiarizado con las opciones de modo oscuro o modo claro de los navegadores, páginas web, aplicaciones móviles o Windows 10 en adelante. Este programa tiene la opción para que usted pueda sentirse cómodo al usarlo. Puede ponerlo en modo oscuro o modo claro.
+                        <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> En las opciones del programa, también se da a disposición un grupo de colores donde el usuario puede elegir el color que más le guste de entre las 8 opciones que tiene. La primera opción es el color por defecto del programa. Esto cambiará el color secundario de programa.
+                        <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> También puede cambiar el color del texto según le guste o se adapte más a sus gustos. Puede elegir entre 4 opciones.
+                        <br><br><item><i class="fa-solid fa-circle" style="color:var(--TextColor);"></i></item> También puede poner el tipo de letra en bold (negrita). Esto puede ayudarle a leer mejor el programa.
+                </div>
+            </div>
+            <div >
+                <div style=" display: flex;padding: 10px;">
+                    <div style="width: 50%;padding: 20px;">
+                        <h1>CONFIGURACIÓN DE FUNCIONAMIENTO</h1>
+                        En las opciones de programa también puede cambiar una configuración importante del programa, iniciar junto con el sistema. Es importante esta función porque va a hacer que la contabilización de las teclas y los clics sea más exacto, de esta manera tiene un control del uso de sus periféricos más preciso.
+                    </div>
+                    <div class="contimag" style="margin-right: 50px;width: 50%;padding: 20px; text-align: center;">
+                        <h1> Cambie el color del programa ;)</h1>
+                        <div style="display: flex;
+                        justify-content: space-evenly;">
+                            <button style="width: 20px; height: 20px; 
+                                        background: #0946ff; 
+                                        border: 0px; border-radius: 5px;"
+                                    onclick="ChangeColor('Blue')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #b22222; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Red')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #ffa500; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Yelow')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #9acd32; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Green')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #40e0d0; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Cyan')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #6495ed; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('LightBlue')"> 
+                            </button>
+                            <button style="width: 20px; 
+                                        height: 20px; 
+                                        background: #9370db; 
+                                        border: 0px; 
+                                        border-radius: 5px;"
+                                    onclick="ChangeColor('Purple')"> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="TitTechnicalDetails"> <h1 class="titles">DETALLES TÉCNICOS</h1> </div>
+
+        <div style="width: 100%;padding: 20px;">
+            <item><i class="fa-solid fa-circle"></i></item> Este programa fue construido en el IDE (entorno de desarrollo integrado) Visual Studio 2019.
+            <br><item><i class="fa-solid fa-circle"></i></item> El lenguaje utilizado para la creación del programa fue <img src="./imgs/HerrAndLenguajes/c-sharp.png" style=" position: relative; height: 35px; top: 15px;"> (C Sharp / C#)
+            <br><br><item><i class="fa-solid fa-circle"></i></item> El programa cuenta con un instalador, este instalador creará la carpeta donde se ubicarán los archivos necesarios para el funcionamiento junto con el ejecutable del programa. También creará un acceso directo en el escritorio y configurará el programa de manera automática para que se ejecute automáticamente junto con el sistema.
+            <br><br> <Alert><i class="fa-solid fa-triangle-exclamation"></i> En caso de que no esté habilitada la función de ejecución automática, puede habilitarla desde las opciones.</Alert>
+            <br><br><item><i class="fa-solid fa-circle"></i></item> Puede deshabilitar la ejecución automática desde las opciones, de forma predeterminada estará activo.
+            <br><br><item><i class="fa-solid fa-circle"></i></item> El programa generará archivos de texto donde está instalado, en los archivos de texto registrará la información de los contadores y guardará las configuraciones del programa para que perduren en el inicio de la aplicación.
+            <br><br><item><i class="fa-solid fa-circle"></i></item> Este programa no incluye un KeyLoger. Solo registra de manera numérica las pulsaciones de las teclas y los clics sin tener en cuenta el orden ni cuándo se han hecho. Es un programa seguro.
+            <br><br><item><i class="fa-solid fa-circle"></i></item> La velocidad del autoclicker dependerá no solo de valor indicado, también dependerá de la capacidad de procesamiento del dispositivo donde esté instalado.
+            <br><br><item><i class="fa-solid fa-circle"></i></item> Actualmente solo se puede asegurar el funcionamiento correcto del programa en Windows 10.
+            <br><br> <Alert><i class="fa-solid fa-triangle-exclamation"></i> El programa no ha sido testeado en sistemas operativos que no sean Windows 10 y tampoco a sido probado en todas las versiones de Windows 10.</Alert>
+
+            
+
+           
+
+        </div>
+
+        <div id="TitHistory" 
+            style="width: 100%;
+                    padding: 20px;
+                    text-align: center; 
+                    margin-bottom: 150px; 
+                    text-align: -webkit-center;
+                    font-family: monospace;
+                    "> 
+            <h1 class="titles" style="padding-left: 200px; padding-right: 200px;">
+                HISTORIAL DE CAMBIOS Y VERSIONES
+            </h1> 
+            <div class="ContCod1">
+                <div class="ContCod2" >
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.2</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Ligeras correcciones y mejoras en la UI. <br>
+                                <br>
+                                Corrección de errores: <br>
+                                Se agregaron medidas para evitar la corrupción del archivo que guarda los datos de los contadores. <br>
+                                Se corrigieron algunos errores leves al cambiar el aspecto del programa con las opciones.<br>
+                                <br>
+                            </c>
+                        </div>
+        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        
+                            <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
+                                Agregué dos mejoras en la gestión de los archivos que contienen los datos de los contadores. <br>
+                                Uno intenta reparar los archivos que se corrompen para que el programa pueda continuar funcionando aunque los archivos no estén como deban estar.
+                                La segunda mejora es para intentar evitar o reducir la posibilidad de que los archivos se corrompan debido a un cierre inesperado del programa. <br>
+                                <br>
+                                Hasta el momento no pude volver a simular el error, supongo que las correcciones funcionan.
+                            </c></div>
+                        <br>
+                    </div>
+                    <br>
+                    ==============================================================================
+                    <br><br>
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.1</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Modificación de la UI del programa.
+                                <br><br>
+                                Corrección de errores: <br>
+                                En ocasiones, el autoclic no funcionaba al activarse.
+                                <br><br>
+                            </c>
+                        </div>
+        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        
+                            <div style="padding-left: 40px; padding-top: 5px;"> <c style="color:rgb(1, 184, 1);">
+                                Modifiqué bastante el UI de programa, lo intenté hacer más simples y compacto. En comparación a como estaba antes... lo logré. <br>
+                                <br>
+                                No me esperaba estos errores raros pero es lo que hay, si surgen se tienen que solucionar.  <br>
+                                El del autoclic es un error mío, cuando lo programé no puse en el orden correcto dos líneas de código, en este caso el orden de los productos si afectó al resultado.<br>
+                                <br>
+                                Aún no publico el instalador, no hasta solucionar estos fallos y comprobar que no hay fallos grabes como el de corromper el archivo de contadores.
+                            </c></div>
+                        <br>
+                    </div>
+                    <br>
+                    ==============================================================================
+                    <br><br>
+                    
+                    <div>
+                        <c style="color:white;">Versión:</c> <c style="color:rgb(1, 184, 1);">1.0</c> <br><br>
+                        <c style="color:white;">Detalles técnicos:</c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Primera versión funcional del programa. <br>
+                                Contadores funcionando correctamente. <br>
+                                Autoclic funcionando correctamente. <br><br>
+                            </c>
+                        </div>
+                        
+                        <c style="color:white;">Comentario del desarrollador: </c><br>
+                        <div style="padding-left: 40px; padding-top: 5px;"> 
+                            <c style="color:rgb(1, 184, 1);">
+                                Bieeeeeeen... al fin lo terminé. La verdad que me llevó trabajo pero al fin puedo decir que está terminado, es funcional y le voy a dar utilidad.<br><br>
+
+                                No voy a publicar el instalador hasta comprobar que el programa funciona correctamente.<br>
+                                De todas formas el código está en GitHub.
+                            </c>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div id="TitCod&Prog" style="width: 100%;padding: 20px; text-align: center; margin-bottom: 150px;"> 
+            <h1 class="titles">CÓDIGO Y PROGRAMA</h1> 
+        
+            <img src="./imgs/HerrAndLenguajes/GitHub.png" style="height: 50px;"> <a href="https://github.com/GabrielGNP/SystemInputsController" target="_blank" >GitHub</a> 
+            <div>Download <a href="https://raw.githubusercontent.com/GabrielGNP/SystemInputsController/main/SIC%20Instaler.msi">SIC Installer</a> <br>
+                (Si la descarga no inicia, puede descargar el instalador desde el repositorio de GitHub)</div>
+        </div>
+    </section>
+</body>
